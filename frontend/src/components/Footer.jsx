@@ -1,8 +1,18 @@
 import React from 'react'
-import { Container, Row, col } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 
 export default function Footer() {
+    const currentYear = new Date().getFullYear()
+
   return (
-    <div>Footer</div>
+    <footer>
+        <Container>
+            <Row>
+                <Col className='text-center py-3'>
+                    <p>ProShop &copy; {currentYear}</p>
+                </Col>
+            </Row>
+        </Container>
+    </footer>
   )
 }
